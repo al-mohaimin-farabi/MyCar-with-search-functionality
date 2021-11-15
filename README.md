@@ -1,4 +1,4 @@
-# Getting Started with Tour Planner
+# Getting Started with My Car
 
 ![Image 0](https://i.ibb.co/SVp3ztw/screenshot-localhost-3000-2021-11-15-23-23-54.png)
 
