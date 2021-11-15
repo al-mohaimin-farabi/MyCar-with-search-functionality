@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Toyota Land Cruiser Prado TX 2018",
+    "img": "https://www.bdstall.com/asset/product-image/giant_130026.jpg",
+    "description": "New shape car, 2018 model year, 2700cc engine capacity, 2TR type engine, LED head lamp, 5D, original navigation, front / side & back monitor, panorama view monitor, audio steering, wooden steering, pre crash safety system, sun roof, full beige leather seat, seat heater, power seat, cruise control, pearl color, side step cover, sun roof vizier, roof rail, rear spoiler, 19 inch alloy wheel, winker mirror.",
+    "Drivetrain": "Front-wheel Drive",
+    "price": "$40,990",
+    "Transmission": "4-speed automatic transmission",
+    "Seat": 7,
+    "Fuel_System": "Octane",
+    "EngineCapacity": "2700 cc"
+  },
+
+  {
+    "name": "Toyota C-HR  2017",
+    "img": "https://www.bdstall.com/asset/product-image/giant_131348.jpg",
+    "description": "Multimedia steering controller, push start, touch panel air conditioning, IDLE stop, full fresh leather interior with built-in DVD, super cool AC, 2 airbags, 4 ABS disk rake, anti-theft security system, central lock, tempered glass, original Japanese alloy rim with a new tyre, original HID projection LED headlight, digital AC panel.",
+    "Drivetrain": "Front-wheel Drive",
+    "price": "$20,300",
+    "Transmission": "CVT auto",
+    "Seat": 5,
+    "Fuel_System": "Octane",
+    "EngineCapacity": "1500 cc"
+  },
+  {
+    "name": "BMW X2",
+    "img": "https://www.bdstall.com/asset/product-image/giant_99948.jpg",
+    "description": "4-cylinder, 192 PS / 5000-6000 RPM maximum engine power, 280 N-m / 1350-4600 RPM maximim troque, 227 kmph top speed, 52 liter Fuel_tank capacity, 225/55 R17 97W front and rear tyre dimension, 7,5 J x 17 inch rear and front light-alloy.",
+    "Drivetrain": "Front-wheel Drive",
+    "price": "$49,000",
+    "Transmission": "8-speed automatic transmission",
+    "Seat": 5,
+    "Fuel_System": "Petrol",
+    "EngineCapacity": "1998cc"
+  },
+  {
+    "name": "Subaru WRX Sedan Manual 2021",
+    "img": "https://www.bdstall.com/asset/product-image/giant_129380.jpg",
+    "description": "4 cylinder engine, 6-speed gear box, power steering, power windows, power door lock, child safety lock, adjustable seat, 4-wheel disc brakes, strut front suspension, double wishbone back suspension, 4 number of cylinders , Fuel_system with direct injection of gasoline, 35.4 feet minimum turning radius, tubeless type tyre, 60.2 liters Fuel_tank capacity, the car has 4 doors, anti lock braking system, USB & auxiliary input, rear reading lamp, parking sensor, bottle holder, 1 liter of Fuel_will go up to 26Km on the long highway, electronic stability control, dual zone A/C, made in Japan.",
+    "Drivetrain": "All Wheel Drive",
+    "price": "$28,420",
+    "Transmission": "Manual w/OD",
+    "Seat": 5,
+    "Fuel_System": "Gasoline",
+    "EngineCapacity": "1598cc"
+  },
+  {
+    "name": "Audi A5",
+    "img": "https://www.bdstall.com/asset/product-image/giant_99871.jpg",
+    "description": "2.0 TDI diesel engine, 4-cylinder, 7-speed gear box, 187.74bhp@3800-4200rpm power, 400nm@1750-3000rpm torque, five-link axle with front track rod front / rear suspension, front and rear disc brack, 235 Km/h top speed, power steering, 18 inch alloy wheel, tubeless / radial tyre, 4-door, 19.2 kmpl mileage, 54 liter Fuel_capacity.",
+    "Drivetrain": "All Wheel Drive",
+    "price": "$42,400",
+    "Transmission": "Automatic",
+    "Seat": 5,
+    "Fuel_System": "Diesel",
+    "EngineCapacity": "1968cc"
+  },
+  {
+    "name": "BMW X7",
+    "img": "https://www.bdstall.com/asset/product-image/giant_99951.jpg",
+    "description": "6-cylinder, 340 PS / 5500-6500 RPM maximum engine power, 1500-5200 RPM maximim troque, 245 kmph top speed, 0-100 km/h to 6.1 second, 83 liter Fuel_tank capacity, 275/50 R20 113WXL front and rear tyre dimension, 8,5 J x 20 inch rear and front light-alloy wheel dimension and material.",
+    "Drivetrain": "All Wheel Drive",
+    "price": " $141,300 (most expensive in its line-up!!)",
+    "Transmission": "Automatic",
+    "Seat": 5,
+    "Fuel_System": "Petrol",
+    "EngineCapacity": "2998cc"
+  },
+  {
+    "name": "Mitsubishi Lancer EX",
+    "img": "https://www.bdstall.com/asset/product-image/giant_99872.jpg",
+    "description": "Electronically Controlled multi-point Fuel_injection, 16-valve inline - 4 DOHC MIVEC 4A91, 80 kW 6000rpm maximum power, 143 N-m / 4000rpm maximumtorque, 177 km/h top speed, power stairing, 0-100Km speed up to 14.2 second.",
+    "Drivetrain": "Front-wheel drive",
+    "price": " $17,000",
+    "Transmission": "INVECS II 4-Speed Automatic",
+    "Seat": 5,
+    "Fuel_System": "Petrol",
+    "EngineCapacity": "1499cc"
+  },
+  {
+    "name": "Mazda Roadster S Leather 2021",
+    "img": "https://www.bdstall.com/asset/product-image/giant_139235.jpg",
+    "description": "Smart key, driver / passenger seat airbag, ABS brake, air conditioner, power steering, idling stop, Bluetooth connection, electric retractable mirror, TV & navigation / memory Navi, CD changer / music server, DVD playback, leather seat, keyless, LED headlamp, back camera, seat heater, electronic stability control, collision damage reduction system, clearance sonar.",
+    "Drivetrain": "Rear-wheel-drive",
+    "price": " $26,830",
+    "Transmission": "Automatic",
+    "Seat": 2,
+    "Fuel_System": "Petrol",
+    "EngineCapacity": "1500cc"
+  },
+  {
+    "name": "Adui A4",
+    "img": "https://www.bdstall.com/asset/product-image/giant_99869.jpg",
+    "description": "TFSI petrol engine, 4-cylinder, 147.51bhp@5000-6000rpm power, 250Nm@1500-3500rpm torque, 7-speed gear box, 5-link front suspension,trapezoidal link rear suspension, ventilated front disc brack, rear disc brack, power steering, tubeless / radial tyre, 4-door, 210 Kmph top speed, 54 liter Fuel_capacity.",
+    "Drivetrain": "Front-wheel-drive",
+    "price": " $49,400",
+    "Transmission": "Automatic",
+    "Seat": 5,
+    "Fuel_System": "Petrol",
+    "EngineCapacity": "1395cc"
+  },
+  {
+    "name": "KIA Optima 2012",
+    "img": "https://www.bdstall.com/asset/product-image/giant_115721.jpg",
+    "description": "Push start, beige leather interior, full leather seats, sunroof, 2000cc engine capacity, LED daylight, fog lamps, reverse camera, multi-function steering wheel, auto speed lock system, soft-touch AC panel, optic miter, armrest, alloy rim.",
+    "Drivetrain": "Front-wheel-drive",
+    "price": " $24,760",
+    "Transmission": "Automatic",
+    "Seat": 5,
+    "Fuel_System": "Octan / CNG",
+    "EngineCapacity": "2000cc"
+  }
+]
