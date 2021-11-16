@@ -9,12 +9,14 @@ const AddReview = () => {
     const confirmation = await window.confirm(`Are Sure You Wanna add review`);
     let review = data;
     if (confirmation) {
-      axios.post("http://localhost:5000/review", review).then((res) => {
-        if (res.data.insertedId) {
-          alert("Adding Successful");
-        }
-        reset();
-      });
+      axios
+        .post("https://intense-everglades-68946.herokuapp.com/review", review)
+        .then((res) => {
+          if (res.data.insertedId) {
+            alert("Adding Successful");
+          }
+          reset();
+        });
     } else {
       alert(`Adding Review Cancelled`);
       reset();

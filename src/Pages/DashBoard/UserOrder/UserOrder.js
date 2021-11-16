@@ -4,7 +4,9 @@ const UserOrder = () => {
   const { user } = useAuth();
   const [myOrders, setMyOrder] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/orders?email=${user.email}`)
+    fetch(
+      `https://intense-everglades-68946.herokuapp.com/orders?email=${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => setMyOrder(data));
   }, [user.email]);
@@ -12,7 +14,7 @@ const UserOrder = () => {
   const handleDelete = (id, title) => {
     const confirmation = window.confirm(`Are Sure You Wanna Delete ${title}`);
     if (confirmation) {
-      const url = `http://localhost:5000/orders/${id}`;
+      const url = `https://intense-everglades-68946.herokuapp.com/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })

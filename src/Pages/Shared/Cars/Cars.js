@@ -8,7 +8,7 @@ const Cars = (props) => {
   else toLoad = cars.length;
 
   useEffect(() => {
-    fetch("http://localhost:5000/cars")
+    fetch("https://intense-everglades-68946.herokuapp.com/cars")
       .then((res) => res.json())
       .then((data) => setCars(data));
   }, []);

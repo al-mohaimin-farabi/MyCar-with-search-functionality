@@ -6,11 +6,13 @@ const AddService = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:5000/cars", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Adding Successful");
-      }
-    });
+    axios
+      .post("https://intense-everglades-68946.herokuapp.com/cars", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Adding Successful");
+        }
+      });
     reset();
   };
   return (

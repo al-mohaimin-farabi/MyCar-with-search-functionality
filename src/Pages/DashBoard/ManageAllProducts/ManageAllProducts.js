@@ -4,7 +4,7 @@ const ManageAllProducts = () => {
   const { user } = useAuth();
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/cars`)
+    fetch(`https://intense-everglades-68946.herokuapp.com/cars`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [user.email]);
@@ -13,7 +13,7 @@ const ManageAllProducts = () => {
     console.log(id, title);
     const confirmation = window.confirm(`Are Sure You Wanna Delete ${title}`);
     if (confirmation) {
-      const url = `http://localhost:5000/cars/${id}`;
+      const url = `https://intense-everglades-68946.herokuapp.com/cars/${id}`;
       fetch(url, {
         method: "DELETE",
       })

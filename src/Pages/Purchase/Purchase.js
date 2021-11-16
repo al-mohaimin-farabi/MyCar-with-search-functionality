@@ -13,7 +13,7 @@ const Purchase = () => {
   // console.log(serviceid);
   const [car, setCar] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/cars/${carId}`)
+    fetch(`https://intense-everglades-68946.herokuapp.com/cars/${carId}`)
       .then((res) => res.json())
       .then((data) => setCar(data));
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -29,7 +29,7 @@ const Purchase = () => {
 
     console.log(order);
     if (confirmation) {
-      axios.post("http://localhost:5000/order", order).then((res) => {
+      axios.post("https://intense-everglades-68946.herokuapp.com/order", order).then((res) => {
         if (res.data.insertedId) {
           alert("Adding Successful");
         }
