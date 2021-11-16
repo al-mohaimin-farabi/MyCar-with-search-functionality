@@ -28,18 +28,19 @@ const AddReview = () => {
         <div className="col-12">
           <h3>Add a review about My Car</h3>
           <div className="add-service w-100">
-            <h2 className="text-dark mt-3 text-center mb-3">
+            <h2 className="text-dark mt-3 text-center mb-5">
               Please Fill Up This From
             </h2>
-            <form className="order-from" onSubmit={handleSubmit(onSubmit)}>
+            <form className="order-from mt-2" onSubmit={handleSubmit(onSubmit)}>
               <input
+                className="form-control"
                 placeholder="Name"
                 defaultValue={user?.displayName}
                 required
                 {...register("name", { required: true, maxLength: 50 })}
               />
 
-              <div className="form-floating">
+              <div className="form-floating w-100">
                 <textarea
                   className="form-control"
                   required
@@ -58,6 +59,7 @@ const AddReview = () => {
               </div>
 
               <input
+                className="form-floating"
                 required
                 placeholder="Ratting (Rate 1-5)"
                 type="text"

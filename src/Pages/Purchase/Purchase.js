@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 import "./Purchase.css";
+import Navigation from "../Shared/Navigation/Navigation";
 const Purchase = () => {
   const { carId } = useParams();
   const history = useHistory();
@@ -29,13 +30,15 @@ const Purchase = () => {
 
     console.log(order);
     if (confirmation) {
-      axios.post("https://intense-everglades-68946.herokuapp.com/order", order).then((res) => {
-        if (res.data.insertedId) {
-          alert("Adding Successful");
-        }
-        history.push("/bookingSuccess");
-        reset();
-      });
+      axios
+        .post("https://intense-everglades-68946.herokuapp.com/order", order)
+        .then((res) => {
+          if (res.data.insertedId) {
+            alert("Adding Successful");
+          }
+          history.push("/bookingSuccess");
+          reset();
+        });
     } else {
       alert(
         `You Have Cancelled Booking ${car?.name}. Redirecting to home page`
@@ -45,6 +48,7 @@ const Purchase = () => {
   };
   return (
     <>
+      <Navigation></Navigation>
       <div className="container  ">
         <div className="col-12 mt-4">
           <h3>Pending...</h3>
@@ -103,9 +107,9 @@ const Purchase = () => {
                   {...register("DeliveryCity")}
                 />
 
-                <div className="form-floating">
+                <div className="form-floating w-100">
                   <textarea
-                    className="form-control width"
+                    className="form-control "
                     required
                     placeholder="Delivery Details "
                     type="text"
