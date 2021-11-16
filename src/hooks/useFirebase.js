@@ -42,9 +42,9 @@ const useFirebase = () => {
             const destination = location?.state?.from || "/";
             history.replace(destination);
           })
-          .catch((error) => {});
-        const destination = location?.state?.from || "/";
-        history.replace(destination);
+          .catch((error) => {
+            setAuthError(error.message);
+          });
       })
       .catch((error) => {
         setAuthError(error.message);
@@ -52,8 +52,6 @@ const useFirebase = () => {
       })
       .finally(() => {
         setIsLoading(false);
-        const destination = location?.state?.from || "/";
-        history.replace(destination);
       });
   };
 

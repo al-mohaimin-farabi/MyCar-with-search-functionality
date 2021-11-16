@@ -20,6 +20,7 @@ const Login = () => {
     setLoginData(newLoginData);
   };
   const handleLoginSubmit = (e) => {
+    console.log(loginData);
     loginUser(loginData.email, loginData.password, location, history);
     e.preventDefault();
   };
@@ -61,6 +62,7 @@ const Login = () => {
                   onChange={handleOnChange}
                   required
                   type="email"
+                  name="email"
                   className="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
@@ -77,6 +79,7 @@ const Login = () => {
                   onChange={handleOnChange}
                   required
                   type="password"
+                  name="password"
                   className="form-control"
                   id="exampleInputPassword1"
                 />
@@ -95,7 +98,7 @@ const Login = () => {
             </form>
             {authError && (
               <div className="alert alert-danger mt-3" role="alert">
-                <span className="bi bi-exclamation-circle-fill"></span>
+                <span className="bi bi-exclamation-circle-fill"></span> &nbsp;
                 {authError}
               </div>
             )}

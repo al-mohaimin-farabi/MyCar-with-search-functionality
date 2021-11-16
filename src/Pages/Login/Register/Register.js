@@ -20,11 +20,12 @@ const Register = () => {
     newLoginData[field] = value;
     setLoginData(newLoginData);
   };
-  const handleLoginSubmit = (e) => {
+  const handleRegistrationSubmit = (e) => {
     if (loginData.password !== loginData.password2) {
       alert("Your password did not match");
       return;
     }
+
     registerUser(
       loginData.email,
       loginData.password,
@@ -64,7 +65,7 @@ const Register = () => {
                 Registration successfull
               </div>
             )}
-            <form onSubmit={handleLoginSubmit}>
+            <form onSubmit={handleRegistrationSubmit}>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
                   Name
