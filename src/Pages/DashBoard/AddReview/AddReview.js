@@ -46,7 +46,7 @@ const AddReview = () => {
                   required
                   placeholder="Review "
                   type="text"
-                  {...register("review", { required: true, maxLength: 50 })}
+                  {...register("review")}
                   id="floatingTextarea2"
                   style={{ height: "100px" }}
                 ></textarea>
@@ -75,7 +75,7 @@ const AddReview = () => {
               <input
                 className="btn btn-dark mt-5"
                 type="submit"
-                value="Book It Now"
+                value="Add Review"
               />
             </form>
           </div>

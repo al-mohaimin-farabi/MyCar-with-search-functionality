@@ -51,7 +51,6 @@ const UserOrder = () => {
                 <div className="col-6   ">
                   <p className="mt-2">
                     <strong>{order?.carName} </strong>
-                    <span className="mt-2">For {order?.Name}</span>
                   </p>
 
                   <p className="mt-2">Email: {order?.Email}</p>
