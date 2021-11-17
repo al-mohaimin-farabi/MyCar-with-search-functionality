@@ -7,7 +7,10 @@ import { NavLink } from "react-router-dom";
 import "./Purchase.css";
 import Navigation from "../Shared/Navigation/Navigation";
 import Footer from "../Shared/Footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Purchase = () => {
+  AOS.init();
   const { carId } = useParams();
   const history = useHistory();
   const { register, handleSubmit, reset } = useForm();
@@ -57,14 +60,16 @@ const Purchase = () => {
       </div>
       <div className="container d-flex justify-content-center">
         <div className="row d-flex justify-content-center">
-          <div className="col-md-7 col-lg-7 col-12">
+          <div className="col-md-7 col-lg-7 col-12 ">
             <div className=" my-card">
               <div className="card border-secodary p-3 text-start">
-                <img
-                  className="p-0 m-0 my-img w-100 rounded"
-                  src={car?.img}
-                  alt="..."
-                />
+                <div className="w-100 my-img">
+                  <img
+                    className="p-0 m-0 my-img w-100 rounded"
+                    src={car?.img}
+                    alt={car?.name}
+                  />
+                </div>
                 <div className="card-body">
                   <h5 className="card-title">{car?.name}</h5>
                   <p className="card-p">{car?.description}</p>
@@ -90,18 +95,21 @@ const Purchase = () => {
               </h2>
               <form className="order-from" onSubmit={handleSubmit(onSubmit)}>
                 <input
+                  data-aos="fade-up"
                   placeholder="Name"
                   defaultValue={user?.displayName}
                   required
                   {...register("Name", { required: true, maxLength: 50 })}
                 />
                 <input
+                  data-aos="fade-up"
                   required
                   placeholder="Email"
                   defaultValue={user?.email}
                   {...register("Email")}
                 />
                 <input
+                  data-aos="fade-up"
                   required
                   placeholder="Delivery City "
                   type="text"
@@ -110,6 +118,7 @@ const Purchase = () => {
 
                 <div className="form-floating w-100">
                   <textarea
+                    data-aos="fade-up"
                     className="form-control "
                     required
                     placeholder="Delivery Details "
@@ -119,6 +128,7 @@ const Purchase = () => {
                     style={{ height: "100px" }}
                   ></textarea>
                   <label
+                    data-aos="fade-up"
                     htmlFor="floatingTextarea2"
                     className="textarea-placeholder"
                   >
@@ -127,6 +137,7 @@ const Purchase = () => {
                 </div>
 
                 <input
+                  data-aos="fade-up"
                   required
                   placeholder="Phone Number"
                   type="number"
@@ -142,7 +153,7 @@ const Purchase = () => {
                 <input
                   className="btn btn-dark mt-5"
                   type="submit"
-                  value="Book It Now"
+                  value="Buy It Now"
                 />
               </form>
             </div>
