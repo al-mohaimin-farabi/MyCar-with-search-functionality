@@ -342,7 +342,8 @@ function Dashboard(props) {
                   Welcome <strong>{user.displayName}</strong>
                 </h5>
                 <p className="card-text mt-4">
-                  Your <strong>Admin</strong> DashBoard is Ready
+                  Your <strong>Admin</strong> DashBoard is Ready. Select option
+                  from the side-bar and go ahead.
                 </p>
               </>
             )}

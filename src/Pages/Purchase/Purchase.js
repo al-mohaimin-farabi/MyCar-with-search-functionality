@@ -6,6 +6,7 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 import "./Purchase.css";
 import Navigation from "../Shared/Navigation/Navigation";
+import Footer from "../Shared/Footer/Footer";
 const Purchase = () => {
   const { carId } = useParams();
   const history = useHistory();
@@ -148,6 +149,7 @@ const Purchase = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };

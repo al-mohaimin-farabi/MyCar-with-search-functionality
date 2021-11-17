@@ -39,52 +39,65 @@ const ManageAllProducts = () => {
           </div>
         </div>
       </div>
-      {products?.length > 0 ? (
-        <ul className="list-group align-middle">
-          {products?.map((product) => (
-            <li
-              key={Math.random() * 1000}
-              className="list-group-item align-middle"
-            >
-              <div className="d-flex justify-content-center align-item-center">
-                <div className="col-7">
-                  <div className="row">
-                    <div className="col-4">
-                      <img
-                        src={product.img}
-                        className="w-100"
-                        height="220"
-                        alt=""
-                      />
-                    </div>
-                    <div className="col-8">
-                      <h6 className="mt-2">
-                        <strong>{product?.name} </strong>
-                      </h6>
-                      <p>Price: {product.price}</p>
-                      <p>Engine Capacity: {product.EngineCapacity}</p>
-                      <p>Fuel System: {product.Fuel_System}</p>
-                      <p>Transmission:{product.Transmission}</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-5 text-end d-flex align-items-center justify-content-end">
-                  <button
-                    className="btn btn-danger me-3"
-                    onClick={() => handleDelete(product?._id, product?.name)}
-                  >
-                    <span className="bi bi-archive-fill"></span>
-                  </button>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <h4 className="ms-3">Nothing Orderd Yet</h4>
-      )}
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12">
+            {products?.length > 0 ? (
+              products.map((product) => (
+                <AllProducts
+                  key={product._id}
+                  product={product}
+                  handleDelete={handleDelete}
+                ></AllProducts>
+              ))
+            ) : (
+              <h4 className="ms-3">Nothing Orderd Yet</h4>
+            )}
+          </div>
+        </div>
+      </div>
     </>
   );
 };
+
+function AllProducts(props) {
+  const product = props.product;
+  const handleDelete = props.handleDelete;
+  return (
+    <div className="card mb-3" style={{ maxWidth: "100%" }}>
+      <div className="row g-0">
+        <div className="col-md-3 col-12 col-lg-3 col-sm-12">
+          <img
+            src={product?.img}
+            className="w-100 rounded-start "
+            alt="..."
+            height="280"
+          />
+        </div>
+        <div className="col-md-6 col-12 col-lg-6 col-sm-12">
+          <div className="card-body">
+            <h5 className="card-title">
+              <strong>{product?.name} </strong>
+            </h5>
+            <p className="card-text">Price: {product?.price}</p>
+            <p className="card-text">
+              Engine Capacity: {product?.EngineCapacity}
+            </p>
+            <p className="card-text">Fuel System: {product?.Fuel_System}</p>
+            <p className="card-text">Transmission: {product?.Transmission}</p>
+          </div>
+        </div>
+        <div className="col-md-2 col-12 col-sm-12 col-lg-2 d-flex align-items-center justify-content-start justify-content-sm-start justify-content-md-end justify-content-lg-end">
+          <button
+            className="btn btn-danger m-2"
+            onClick={() => handleDelete(product?._id, product?.name)}
+          >
+            <span className="bi bi-archive-fill"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default ManageAllProducts;

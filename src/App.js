@@ -9,6 +9,7 @@ import Dashboard from "./Pages/DashBoard/DashBoard";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Purchase from "./Pages/Purchase/Purchase";
 import BookingSuccess from "./Pages/BookingSuccess/BookingSuccess";
+import NotFound from "./Pages/NotFound/NotFound";
 function App() {
   return (
     <div className="App">
@@ -38,6 +39,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
         </Router>
