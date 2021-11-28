@@ -25,7 +25,7 @@ style=“margin-left: 10px;”
 
 There is a admin panel where admin can manage orders from client. Admin can do CRUD oparetion on his choice. He can add new services.
 Admin Email: admin@admin.com
-Admin Pass: 123456
+
 
 ![ Image 2](https://i.ibb.co/h7yHHBw/screenshot-localhost-3000-2021-11-15-23-29-47.png)
 
