@@ -28,8 +28,7 @@ style=“margin-left: 10px;”
 
 There is a admin panel where admin can manage orders from client. Admin can do CRUD oparetion on his choice. He can add new services.
 Admin Email: admin@admin.com
-Admin PassWord: Because This repo is public, I cant publish the password here. But if you are interested to view the admin feature fills free to knock me. I will provide you the password
-
+Admin PassWord: Admin123
 
 ![ Image 2](https://i.ibb.co/h7yHHBw/screenshot-localhost-3000-2021-11-15-23-29-47.png)
 
