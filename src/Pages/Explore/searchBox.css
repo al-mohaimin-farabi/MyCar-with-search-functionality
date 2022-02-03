@@ -1,0 +1,28 @@
+.search-box {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid #111d5e;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+  color: rgb(31, 30, 30);
+  background: none;
+  position: relative;
+}
+.search-button {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: auto;
+  border: 3px solid #111d5e;
+  border-radius: 0px 10px 10px 0px;
+  padding: 10px;
+  background: transparent;
+}
