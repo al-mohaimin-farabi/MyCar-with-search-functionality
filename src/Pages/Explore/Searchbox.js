@@ -1,10 +1,16 @@
 import React from "react";
 import "./searchBox.css";
-const Searchbox = ({ getSearchedText }) => {
+import { useHistory } from "react-router";
+const Searchbox = () => {
+  const history = useHistory();
+  const search = (e) => {
+    const inputedText = e.target.searchtext.value;
+    history.push(`/searchresult/${inputedText}`);
+  };
   return (
     <div className="container mt-3">
       <div className="search-box">
-        <form className="w-100" onSubmit={getSearchedText}>
+        <form className="w-100" onSubmit={search}>
           <input
             name="searchtext"
             type="text"
